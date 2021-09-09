@@ -197,7 +197,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 ## How to setup on Heroku 
 For starters click on this button 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnimeKaizoku/SaitamaRobot.git) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ImTheekshana126/The-Saber-Bot.git) 
 
 
 ## Credits
