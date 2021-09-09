@@ -1,14 +1,34 @@
 {
+      "name": "Arrow bot",
+      "description": "An Anime themed Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Arrow"
+      ],   
+   "repository": "https://github.com/ImTheekshana126/The-Saber-Bot",
+   "logo": "https://telegra.ph/file/2ebd3d2bf6db41a457bfd.jpg",
    "addons": [
-      {
+    {
          "options": {
             "version": "12"
          },
          "plan": "heroku-postgresql"
       }
-   ],
-   "description": "An Anime themed Telegram group management bot.",
-   "env": {
+  ],
+      
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],
+      
+  "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
@@ -32,16 +52,21 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "792109647"
+         "value": "1041727415"
+      },
+      "ARROW_IMG": {
+         "description": "Image of your bots welcome message",
+         "required": true,
+         "value": "https://telegra.ph/file/2ebd3d2bf6db41a457bfd.jpg"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Sawada"
+         "value": "DeshadeethThisarana"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "MyAwesomeSupportGroupGoesHere"
+         "value": "GangOfFriends"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -66,7 +91,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "660565862 459034222 189005567 346981140 367222759"
+         "value": "1041727415"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -77,25 +102,25 @@
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
       },
-      "SUDO_USERS": {
+      "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "459034222 189005567 660565862 346981140 367222759"
+         "value": "1041727415"
       },
-      "SUPPORT_USERS": {
+      "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "615304572"
+         "value": "1041727415"
       },
-      "TIGER_USERS": {
+      "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": ""
+         "value": "1041727415"
       },
-      "WHITELIST_USERS": {
+      "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "1041727415"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -133,25 +158,28 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://www.paypal.me/PaulSonOfLars"
+         "value": "https://www.paypal.me/Deshadeeth"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
          "value": "True"
       },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+                
+      },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
          "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+      },
+      "WALL_API": {
+         "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
       }
-   },
-   "keywords": [
-      "telegram",
-      "anime",
-      "group",
-      "manager",
-      "Saitama"
-   ],
-   "name": "Saitama Robot",
-   "repository": "https://github.com/ImTheekshana126/The-Saber-Bot"
+      
+   }
 }
