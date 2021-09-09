@@ -1,4 +1,4 @@
-from SaitamaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Saber.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
